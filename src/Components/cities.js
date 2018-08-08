@@ -3,7 +3,7 @@
 ,'Indore','chittor'];
 */
 
-const morecities=[
+const cities=[
     {
         "id": "1",
         "name": "Mumbai",
@@ -6101,4 +6101,4 @@ const morecities=[
     }
 ]
 
-export default morecities;
+export default cities;

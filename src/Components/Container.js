@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { PowerSelect } from 'react-power-select'
 import 'react-power-select/dist/react-power-select.css'
-import morecities from './cities.js'
+import cities from './cities.js'
 import axios from 'axios';
 import DisplayWeather from './DisplayWeather'
 import './styles.css'
@@ -10,7 +10,6 @@ class Container extends Component {
   state = {};
   
   getWeatherByCity = cityname =>{
-
     axios.get(`http://api.openweathermap.org/data/2.5/forecast?q=${cityname},in&APPID=0ed8935ec08da2ab5c2af86e5891c5a4`
       ).then(response => {
         //console.log("response", response);
@@ -21,7 +20,7 @@ class Container extends Component {
   }
 
   handleChange = ({ option }) => {
-    console.log("change", option)
+    //console.log("change", option)
     this.setState({
       selectedOption: option
     })
@@ -29,12 +28,12 @@ class Container extends Component {
   }
 
   render() {
-    console.log("state",this.state);
+    //console.log("state",this.state);
     return (
       <div className="container">
         <h1><font face="Comic sans MS" size=" 8"> Whatsup Weather?</font></h1>
         <PowerSelect
-          options={morecities.map(item=>item.name)}
+          options={cities.map(item=>item.name)}
           selected={this.state.selectedOption}
           onChange={this.handleChange}
         />
