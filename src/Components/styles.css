@@ -1,0 +1,26 @@
+.container{
+	text-align: center;
+}
+h1{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.weatherContainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+.displayWeather{
+	width: 500px;
+	height: 300px;
+	background: rgba(255,69,0,0.6);
+	padding-top: 20px;
+	margin-top: 10px;
+	border-radius: 20px;
+}
+
+h2,h3,p{
+	margin-left: -40px;
+}
