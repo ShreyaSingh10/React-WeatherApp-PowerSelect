@@ -28,7 +28,7 @@ export default class DisplayWeather extends React.Component {
             </p>
             <p>
               {' '}
-              <b>Humidity:</b> {data.main.humidity}
+              <b>Humidity:</b> {data.main.humidity} %
             </p>
             <p>
               {' '}
